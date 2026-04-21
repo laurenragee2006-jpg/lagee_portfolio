@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lauren Agee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Caveat:wght@400;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a class="nav__logo" href="#">la.</a>
+    <div class="nav__links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__top-bar">
+      <span class="hand">Hi. Since you're new here.</span>
+      <span class="hand">let me be your guide →</span>
+    </div>
+
+    <div class="hero__main">
+      <div class="hero__name-block">
+        <p class="hero__this-is">This is</p>
+        <h1 class="hero__name">Lauren<br>Agee</h1>
+      </div>
+      <!-- swap src with a real photo -->
+      <div class="hero__photo-wrap">
+        <img src="photo.jpg" alt="Lauren Agee" class="hero__photo" onerror="this.style.display='none'">
+        <div class="hero__photo-placeholder" aria-hidden="true">add your photo here</div>
+      </div>
+    </div>
+
+    <div class="hero__bottom-bar">
+      <span class="hero__role">Business Information Technology · Data &amp; Analytics</span>
+      <span class="hand">By Lauren Agee</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__grid">
+
+      <div class="about__copy">
+        <span class="hand section-hand">a little about me.</span>
+        <p>I'm driven by curiosity and a desire to understand how things work—especially in business and law. I'm studying Business IT with a focus on data and analytics — because I want to understand both the code <em>and</em> why it matters.</p>
+        <p>While in college, I've built a Spotify player, a port scanner, and a handful of web apps.</p>
+        <p><strong>I love building things people actually use.</strong></p>
+      </div>
+
+      <!-- swap these with real photos -->
+      <div class="about__photos">
+        <div class="about__photo about__photo--a">
+          <img src="photo2.jpg" alt="" onerror="this.parentElement.classList.add('photo-empty')">
+          <span class="photo-hint">photo</span>
+        </div>
+        <div class="about__photo about__photo--b">
+          <img src="photo3.jpg" alt="" onerror="this.parentElement.classList.add('photo-empty')">
+          <span class="photo-hint">photo</span>
+        </div>
+        <div class="about__photo about__photo--c">
+          <img src="photo4.jpg" alt="" onerror="this.parentElement.classList.add('photo-empty')">
+          <span class="photo-hint">photo</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="skills-wrap">
+      <span class="hand section-hand">such as...</span>
+      <div class="skills-grid">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill skill--pink">JavaScript</span>
+        <span class="skill">REST API</span>
+        <span class="skill skill--pink">OAuth</span>
+        <span class="skill">PWAs</span>
+        <span class="skill">Web Design</span>
+        <span class="skill skill--pink">Data Analytics</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <span class="hand section-hand">things i've built.</span>
+
+      <div class="proj-grid">
+
+        <a href="https://pastelplayer.vercel.app/" target="_blank" class="proj proj--large">
+          <div class="proj__tag">Web App · OAuth · REST API</div>
+          <h3 class="proj__title">Pastel Player</h3>
+          <p class="proj__desc">A browser-based Spotify controller with a pastel aesthetic. OAuth authentication, real-time playback control, queue display — and your credentials are never stored.</p>
+          <div class="proj__techs">
+            <span>JavaScript</span><span>OAuth</span><span>REST API</span><span>CSS</span>
+          </div>
+          <span class="proj__cta">Visit ↗</span>
+        </a>
+
+        <a href="https://matcha-site-three.vercel.app/" target="_blank" class="proj proj--small">
+          <div class="proj__tag">Web App · Daily Fun</div>
+          <h3 class="proj__title">Matcha of the Day</h3>
+          <p class="proj__desc">Click a button, get a matcha recipe, a mood, and a song rec. A tiny daily ritual generator.</p>
+          <div class="proj__techs">
+            <span>JavaScript</span><span>HTML</span><span>CSS</span>
+          </div>
+          <span class="proj__cta">Visit ↗</span>
+        </a>
+
+        <div class="proj proj--medium">
+          <div class="proj__tag">CLI Tool · Networking</div>
+          <h3 class="proj__title">Port Scanner</h3>
+          <p class="proj__desc">A command-line port scanner in Python. Scans a target host across a port range, reporting open, closed, or filtered results. Built to learn network fundamentals hands-on.</p>
+          <div class="proj__techs">
+            <span>Python</span><span>Networking</span><span>CLI</span>
+          </div>
+        </div>
+
+        <div class="proj proj--medium">
+          <div class="proj__tag">Team Project · SaaS</div>
+          <h3 class="proj__title">Lucent</h3>
+          <p class="proj__desc">Investor pipeline tool for university investment groups. One link collects applicants, AI filters results, and the dashboard makes decisions easy. Built with a team of four.</p>
+          <div class="proj__techs">
+            <span>JavaScript</span><span>HTML</span><span>CSS</span><span>AI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="wrap" id="contact">
+    <div class="wrap__inner">
+      <span class="wrap__hand hand">and that's a wrap.</span>
+      <h2 class="wrap__title">Let's work<br><em>together.</em></h2>
+      <p class="wrap__sub">If you're interested in collaborating or just want to say hi —</p>
+      <div class="wrap__btns">
+        <a href="mailto:laurenragee2006@gmail.com" class="wrap__btn">Email me ↗</a>
+        <a href="https://www.linkedin.com/in/lauren-agee-376850363/" target="_blank" class="wrap__btn wrap__btn--outline">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>© 2026 Lauren Agee</span>
+    <a href="mailto:laurenragee2006@gmail.com">laurenragee2006@gmail.com</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
