@@ -6,7 +6,7 @@
   <title>Lauren Agee</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Caveat:wght@400;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Caveat:wght@400;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,15 +28,20 @@
       <span class="hand">let me be your guide →</span>
     </div>
 
-    <div class="hero__main">
+    <div class="hero__center">
+      <!-- sparkles -->
+      <span class="sparkle sparkle--tl" aria-hidden="true">✦</span>
+      <span class="sparkle sparkle--bl" aria-hidden="true">✦</span>
+
+      <!-- oval drawn with SVG -->
+      <svg class="hero__oval" viewBox="0 0 520 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="260" cy="120" rx="252" ry="112" stroke="#D4607A" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+
       <div class="hero__name-block">
         <p class="hero__this-is">This is</p>
         <h1 class="hero__name">Lauren<br>Agee</h1>
-      </div>
-      <!-- swap src with a real photo -->
-      <div class="hero__photo-wrap">
-        <img src="photo.jpg" alt="Lauren Agee" class="hero__photo" onerror="this.style.display='none'">
-        <div class="hero__photo-placeholder" aria-hidden="true">add your photo here</div>
+        <p class="hero__portfolio-label">PORTFOLIO</p>
       </div>
     </div>
 

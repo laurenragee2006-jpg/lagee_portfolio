@@ -109,6 +109,7 @@ img { display: block; max-width: 100%; object-fit: cover; }
   justify-content: space-between;
   padding: 2rem 2.5rem 2.5rem;
   border-bottom: 1px solid var(--border);
+  background: #FFE8EE;
   position: relative;
   overflow: hidden;
 }
@@ -119,72 +120,74 @@ img { display: block; max-width: 100%; object-fit: cover; }
   align-items: flex-start;
 }
 
-.hero__main {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 2rem;
+/* Center logo composition */
+.hero__center {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   padding: 2rem 0;
 }
 
+.hero__oval {
+  position: absolute;
+  width: clamp(320px, 55vw, 580px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-3deg);
+  pointer-events: none;
+}
+
 .hero__name-block {
-  flex: 1;
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
 .hero__this-is {
   font-family: var(--font-hand);
-  font-size: 1.5rem;
-  color: var(--text-dim);
-  margin-bottom: 0.25rem;
+  font-size: 1.3rem;
+  color: #C45A72;
+  margin-bottom: 0;
 }
 
 .hero__name {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 900;
-  font-size: clamp(80px, 13vw, 160px);
-  line-height: 0.92;
-  color: var(--pink);
-  letter-spacing: -3px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: clamp(72px, 12vw, 148px);
+  line-height: 0.95;
+  color: #D4607A;
+  letter-spacing: -1px;
 }
 
-/* Photo block */
-.hero__photo-wrap {
-  width: clamp(200px, 28vw, 360px);
-  aspect-ratio: 3 / 4;
-  flex-shrink: 0;
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-  background: var(--cream-card);
-  border: 1px solid var(--border);
+.hero__portfolio-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #C45A72;
+  margin-top: 0.5rem;
 }
 
-.hero__photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero__photo-placeholder {
+/* Sparkles */
+.sparkle {
   position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-hand);
-  font-size: 1.1rem;
-  color: var(--text-dim);
-  text-align: center;
-  padding: 1rem;
+  font-size: 2rem;
+  color: #D4607A;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
 }
+.sparkle--tl { top: 20%; left: 30%; font-size: 1.6rem; }
+.sparkle--bl { bottom: 20%; left: 22%; font-size: 2.4rem; }
 
 .hero__bottom-bar {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid rgba(212,96,122,0.2);
   padding-top: 1.25rem;
 }
 
@@ -193,7 +196,7 @@ img { display: block; max-width: 100%; object-fit: cover; }
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: #C45A72;
 }
 
 /* =============================================
@@ -527,9 +530,8 @@ img { display: block; max-width: 100%; object-fit: cover; }
    RESPONSIVE
    ============================================= */
 @media (max-width: 900px) {
-  .hero__main { flex-direction: column-reverse; align-items: flex-start; }
-  .hero__photo-wrap { width: 100%; max-width: 340px; aspect-ratio: 4/3; }
-  .hero__name { font-size: clamp(64px, 16vw, 110px); }
+  .hero__name { font-size: clamp(60px, 16vw, 110px); }
+  .hero__oval { width: clamp(280px, 80vw, 420px); }
 
   .about__grid { grid-template-columns: 1fr; gap: 3rem; }
   .about__deco { max-width: 320px; }
@@ -544,7 +546,9 @@ img { display: block; max-width: 100%; object-fit: cover; }
   .nav { padding: 1rem 1.25rem; }
   .hero { padding: 1.5rem 1.25rem 2rem; min-height: auto; }
   .hero__top-bar { flex-direction: column; gap: 0.25rem; }
-  .hero__name { font-size: clamp(56px, 18vw, 90px); letter-spacing: -2px; }
+  .hero__name { font-size: clamp(52px, 18vw, 80px); }
+  .sparkle--tl { left: 10%; }
+  .sparkle--bl { left: 5%; }
   .about { padding: 4rem 1.25rem; }
   .wrap { padding: 5rem 1.25rem; }
   .wrap__title { font-size: clamp(44px, 14vw, 80px); }
