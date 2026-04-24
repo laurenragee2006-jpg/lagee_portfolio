@@ -11,8 +11,8 @@
   --cream:       #F5F0E8;
   --cream-card:  #EDE8DB;
   --cream-dark:  #E3DDD0;
-  --pink:        #FF3060;
-  --pink-pale:   rgba(255,48,96,0.09);
+  --pink:        #D4607A;
+  --pink-pale:   rgba(212,96,122,0.1);
   --dark:        #1A1918;
   --text:        #1A1918;
   --text-muted:  rgba(26,25,24,0.6);
@@ -153,12 +153,13 @@ img { display: block; max-width: 100%; object-fit: cover; }
 }
 
 .hero__name {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 900;
   font-size: clamp(72px, 12vw, 148px);
   line-height: 0.95;
   color: #D4607A;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
 }
 
 .hero__portfolio-label {
