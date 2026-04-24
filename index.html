@@ -57,20 +57,14 @@
         <p><strong>I love building things people actually use.</strong></p>
       </div>
 
-      <!-- swap these with real photos -->
-      <div class="about__photos">
-        <div class="about__photo about__photo--a">
-          <img src="photo2.jpg" alt="" onerror="this.parentElement.classList.add('photo-empty')">
-          <span class="photo-hint">photo</span>
-        </div>
-        <div class="about__photo about__photo--b">
-          <img src="photo3.jpg" alt="" onerror="this.parentElement.classList.add('photo-empty')">
-          <span class="photo-hint">photo</span>
-        </div>
-        <div class="about__photo about__photo--c">
-          <img src="photo4.jpg" alt="" onerror="this.parentElement.classList.add('photo-empty')">
-          <span class="photo-hint">photo</span>
-        </div>
+      <div class="about__deco" aria-hidden="true">
+        <div class="deco__blob deco__blob--pink"></div>
+        <div class="deco__blob deco__blob--circle"></div>
+        <div class="deco__initials">LA</div>
+        <div class="deco__dot deco__dot--1"></div>
+        <div class="deco__dot deco__dot--2"></div>
+        <div class="deco__dot deco__dot--3"></div>
+        <span class="deco__hand">builder. analyst. maker.</span>
       </div>
 
     </div>
@@ -117,22 +111,36 @@
           <span class="proj__cta">Visit ↗</span>
         </a>
 
-        <div class="proj proj--medium">
-          <div class="proj__tag">CLI Tool · Networking</div>
-          <h3 class="proj__title">Port Scanner</h3>
-          <p class="proj__desc">A command-line port scanner in Python. Scans a target host across a port range, reporting open, closed, or filtered results. Built to learn network fundamentals hands-on.</p>
-          <div class="proj__techs">
-            <span>Python</span><span>Networking</span><span>CLI</span>
-          </div>
-        </div>
+        <div class="proj-grid__bottom">
 
-        <div class="proj proj--medium">
-          <div class="proj__tag">Team Project · SaaS</div>
-          <h3 class="proj__title">Lucent</h3>
-          <p class="proj__desc">Investor pipeline tool for university investment groups. One link collects applicants, AI filters results, and the dashboard makes decisions easy. Built with a team of four.</p>
-          <div class="proj__techs">
-            <span>JavaScript</span><span>HTML</span><span>CSS</span><span>AI</span>
+          <a href="https://fitboardstyle.vercel.app/" target="_blank" class="proj proj--medium">
+            <div class="proj__tag">Web App · Computer Vision</div>
+            <h3 class="proj__title">Fitboard</h3>
+            <p class="proj__desc">A digital wardrobe and outfit builder. Upload your clothes, get automatic background removal via computer vision, organize by category, and build outfits — all in one place.</p>
+            <div class="proj__techs">
+              <span>JavaScript</span><span>Computer Vision</span><span>CSS</span><span>API</span>
+            </div>
+            <span class="proj__cta">Visit ↗</span>
+          </a>
+
+          <div class="proj proj--medium">
+            <div class="proj__tag">CLI Tool · Networking</div>
+            <h3 class="proj__title">Port Scanner</h3>
+            <p class="proj__desc">A command-line port scanner in Python. Scans a target host across a port range, reporting open, closed, or filtered results. Built to learn network fundamentals hands-on.</p>
+            <div class="proj__techs">
+              <span>Python</span><span>Networking</span><span>CLI</span>
+            </div>
           </div>
+
+          <div class="proj proj--medium">
+            <div class="proj__tag">Team Project · SaaS</div>
+            <h3 class="proj__title">Lucent</h3>
+            <p class="proj__desc">Investor pipeline tool for university investment groups. One link collects applicants, AI filters results, and the dashboard makes decisions easy. Built with a team of four.</p>
+            <div class="proj__techs">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span><span>AI</span>
+            </div>
+          </div>
+
         </div>
 
       </div>
