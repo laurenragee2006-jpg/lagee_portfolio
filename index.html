@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lauren Agee | Developer & Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a class="nav__logo" href="#">la.</a>
+    <div class="nav__links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="mailto:laurenragee2006@gmail.com" class="nav__status">
+      <span class="nav__dot"></span>Available for internships
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__inner">
+      <p class="hero__label mono">// developer &amp; builder</p>
+      <h1 class="hero__name">Lauren<br>Agee.</h1>
+      <p class="hero__tagline">I build web apps, mobile tools, and data pipelines and care about every layer, from the database to the UI. Currently studying Business IT at Tennessee Tech University.</p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--accent">View my work ↓</a>
+        <a href="mailto:laurenragee2006@gmail.com" class="btn btn--ghost">Get in touch →</a>
+      </div>
+    </div>
+    <div class="hero__tech-bar">
+      <span class="mono">Python</span>
+      <span class="sep">·</span>
+      <span class="mono">JavaScript</span>
+      <span class="sep">·</span>
+      <span class="mono">React Native</span>
+      <span class="sep">·</span>
+      <span class="mono">SQL</span>
+      <span class="sep">·</span>
+      <span class="mono">REST APIs</span>
+      <span class="sep">·</span>
+      <span class="mono">AI Integration</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="mono section-label">// projects</p>
+        <h2 class="section-title">Things I've built.</h2>
+      </div>
+
+      <!-- Row 1: two featured cards -->
+      <div class="proj-row proj-row--featured">
+
+        <a href="https://getdealflow-app.vercel.app/index.html" target="_blank" class="proj proj--lg fade-up">
+          <div class="proj__top">
+            <span class="proj__tag">AI · SaaS · B2B</span>
+            <span class="proj__ext mono">↗</span>
+          </div>
+          <h3 class="proj__title">Lucent</h3>
+          <p class="proj__desc">AI-powered investor pipeline tool for university investment groups. One link collects applicants, AI filters results, and the dashboard surfaces the right candidates. Built with a team of four. I owned brand and front-end.</p>
+          <div class="proj__foot">
+            <div class="proj__techs">
+              <span>JavaScript</span><span>AI Integration</span><span>CSS</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://syllasync-five.vercel.app/" target="_blank" class="proj proj--md fade-up">
+          <div class="proj__top">
+            <span class="proj__tag">AI · EdTech</span>
+            <span class="proj__ext mono">↗</span>
+          </div>
+          <h3 class="proj__title">SyllaSync</h3>
+          <p class="proj__desc">Upload a syllabus and SyllaSync extracts every deadline and generates a study schedule automatically, turning a wall of text into a plan you can actually follow.</p>
+          <div class="proj__foot">
+            <div class="proj__techs">
+              <span>JavaScript</span><span>AI</span><span>CSS</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Row 2 -->
+      <div class="proj-row proj-row--three fade-up">
+
+        <a href="https://airline-ops-dashboard.vercel.app/" target="_blank" class="proj">
+          <div class="proj__top">
+            <span class="proj__tag">Data Engineering · Analytics</span>
+            <span class="proj__ext mono">↗</span>
+          </div>
+          <h3 class="proj__title">Airline Ops Analytics</h3>
+          <p class="proj__desc">End-to-end data pipeline ingesting airline operations data with Python and SQL, modeled in a star schema, and visualized in Power BI. Built to practice real data engineering workflows.</p>
+          <div class="proj__foot">
+            <div class="proj__techs">
+              <span>Python</span><span>SQL</span><span>Power BI</span><span>Docker</span>
+            </div>
+            <span class="proj__wip mono">In progress</span>
+          </div>
+        </a>
+
+        <a href="https://workout-tracker-gamma-cyan.vercel.app/" target="_blank" class="proj">
+          <div class="proj__top">
+            <span class="proj__tag">Mobile · React Native</span>
+            <span class="proj__ext mono">↗</span>
+          </div>
+          <h3 class="proj__title">Workout Tracker</h3>
+          <p class="proj__desc">A full-featured iOS app built in Expo and React Native. Log workouts, track supplements, and set reminders, all shipped to iPhone via Expo Go with persistent local storage.</p>
+          <div class="proj__foot">
+            <div class="proj__techs">
+              <span>React Native</span><span>Expo</span><span>JavaScript</span>
+            </div>
+            <span class="proj__wip mono">iOS</span>
+          </div>
+        </a>
+
+        <a href="https://fitboardstyle.vercel.app/" target="_blank" class="proj">
+          <div class="proj__top">
+            <span class="proj__tag">Computer Vision · Web App</span>
+            <span class="proj__ext mono">↗</span>
+          </div>
+          <h3 class="proj__title">Fitboard</h3>
+          <p class="proj__desc">Digital wardrobe and outfit builder. Uploads trigger automatic background removal via a computer vision API. Clothes are categorized, stored, and assembled into outfits in the browser.</p>
+          <div class="proj__foot">
+            <div class="proj__techs">
+              <span>JavaScript</span><span>Computer Vision</span><span>CSS</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Row 3 -->
+      <div class="proj-row proj-row--three fade-up">
+
+        <a href="https://pastelplayer.vercel.app/" target="_blank" class="proj">
+          <div class="proj__top">
+            <span class="proj__tag">OAuth 2.0 · REST API</span>
+            <span class="proj__ext mono">↗</span>
+          </div>
+          <h3 class="proj__title">Pastel Player</h3>
+          <p class="proj__desc">Browser-based Spotify controller using the Spotify Web API and Authorization Code flow. Real-time playback, queue display, zero credential storage.</p>
+          <div class="proj__foot">
+            <div class="proj__techs">
+              <span>JavaScript</span><span>OAuth 2.0</span><span>REST API</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://matcha-site-three.vercel.app/" target="_blank" class="proj">
+          <div class="proj__top">
+            <span class="proj__tag">Web App</span>
+            <span class="proj__ext mono">↗</span>
+          </div>
+          <h3 class="proj__title">Matcha of the Day</h3>
+          <p class="proj__desc">Click a button, get a matcha recipe, a mood, and a song rec. A small daily generator, built to practice UI and API chaining.</p>
+          <div class="proj__foot">
+            <div class="proj__techs">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+        </a>
+
+        <div class="proj">
+          <div class="proj__top">
+            <span class="proj__tag">Python · Networking</span>
+          </div>
+          <h3 class="proj__title">Port Scanner</h3>
+          <p class="proj__desc">CLI tool that scans a target host across a port range and reports open, closed, or filtered status. Built to understand networking fundamentals hands-on.</p>
+          <div class="proj__foot">
+            <div class="proj__techs">
+              <span>Python</span><span>Sockets</span><span>CLI</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="mono section-label">// skills</p>
+        <h2 class="section-title">The toolkit.</h2>
+      </div>
+
+      <div class="skills-table fade-up">
+        <div class="skills-row">
+          <span class="skills-row__label mono">Languages</span>
+          <div class="skills-row__items">
+            <span class="skill skill--hi">Python</span>
+            <span class="skill skill--hi">JavaScript</span>
+            <span class="skill skill--hi">HTML &amp; CSS</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Bash</span>
+          </div>
+        </div>
+        <div class="skills-row">
+          <span class="skills-row__label mono">Frameworks &amp; APIs</span>
+          <div class="skills-row__items">
+            <span class="skill skill--hi">React Native</span>
+            <span class="skill skill--hi">Expo</span>
+            <span class="skill skill--hi">REST APIs</span>
+            <span class="skill">OAuth 2.0</span>
+            <span class="skill">PWAs</span>
+          </div>
+        </div>
+        <div class="skills-row">
+          <span class="skills-row__label mono">Data &amp; AI</span>
+          <div class="skills-row__items">
+            <span class="skill skill--hi">Data Analytics</span>
+            <span class="skill skill--hi">Power BI</span>
+            <span class="skill skill--hi">AI Integration</span>
+            <span class="skill">Computer Vision</span>
+            <span class="skill">Data Pipelines</span>
+          </div>
+        </div>
+        <div class="skills-row">
+          <span class="skills-row__label mono">Tools</span>
+          <div class="skills-row__items">
+            <span class="skill skill--hi">Git</span>
+            <span class="skill">Docker</span>
+            <span class="skill">Vercel</span>
+            <span class="skill">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="mono section-label">// about</p>
+        <h2 class="section-title">A bit about me.</h2>
+      </div>
+
+      <div class="about__inner fade-up">
+        <div class="about__copy">
+          <p>I'm a Business IT student at Tennessee Tech University with a focus on AI and data. I care about the full stack, not just the front-end, and build projects that actually work end to end.</p>
+          <p>Outside class I've shipped a React Native iOS app, built a data engineering pipeline with Python and Power BI, built an AI SaaS with a team, and written a network port scanner from scratch. I learn by building real things.</p>
+          <p>I'm looking for an internship where I can write real code, work on real data problems, and keep leveling up fast.</p>
+        </div>
+        <div class="about__facts">
+          <div class="fact">
+            <span class="fact__key mono">school</span>
+            <span class="fact__val">Tennessee Tech University</span>
+          </div>
+          <div class="fact">
+            <span class="fact__key mono">major</span>
+            <span class="fact__val">Business Information Technology</span>
+          </div>
+          <div class="fact">
+            <span class="fact__key mono">focus</span>
+            <span class="fact__val">AI · Data · Web</span>
+          </div>
+          <div class="fact">
+            <span class="fact__key mono">available</span>
+            <span class="fact__val fact__val--green">Internships · 2026</span>
+          </div>
+          <div class="fact">
+            <span class="fact__key mono">github</span>
+            <a href="https://github.com/laurenragee2006-jpg" target="_blank" class="fact__val fact__link">laurenragee2006-jpg ↗</a>
+          </div>
+          <div class="fact">
+            <span class="fact__key mono">linkedin</span>
+            <a href="https://www.linkedin.com/in/lauren-agee-376850363/" target="_blank" class="fact__val fact__link">lauren-agee ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner fade-up">
+        <p class="mono section-label">// contact</p>
+        <h2 class="contact__title">Let's talk.</h2>
+        <p class="contact__sub">Open to internships, project collabs, and interesting conversations. Drop me a line.</p>
+        <div class="contact__actions">
+          <a href="mailto:laurenragee2006@gmail.com" class="btn btn--accent">laurenragee2006@gmail.com ↗</a>
+          <a href="https://www.linkedin.com/in/lauren-agee-376850363/" target="_blank" class="btn btn--ghost">LinkedIn ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span class="footer__logo">la.</span>
+    <span class="mono footer__copy">© 2026 Lauren Agee</span>
+    <a href="mailto:laurenragee2006@gmail.com" class="footer__email mono">laurenragee2006@gmail.com</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
